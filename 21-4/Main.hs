@@ -22,7 +22,7 @@ calculate n k pos
                 in
                     l - e
 
--- �ȤȲȤδ֤ε�Υ�Υꥹ��
+-- 家と家の間の距離のリスト
 distance :: [Int] -> [Int]
 distance hs = fmap (uncurry $ flip (-)) $ f hs where
   f :: [a] -> [(a, a)]

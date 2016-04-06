@@ -14,7 +14,7 @@ type Prime = Int
 primes :: [Prime]
 primes = 2 : filter isPrime [3,5..]
 
--- ´ûÃÎ¤ÎÁÇ¿ô¤Î¤¤¤º¤ì¤Ç¤â³ä¤ì¤Ê¤¤¤Ê¤éÁÇ¿ô
+-- æ—¢çŸ¥ã®ç´ æ•°ã®ã„ãšã‚Œã§ã‚‚å‰²ã‚Œãªã„ãªã‚‰ç´ æ•°
 isPrime ::  Int -> Bool
 isPrime n = all f ps' where
   ps' = takeWhile (\p -> p*p <= n) primes
